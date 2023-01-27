@@ -342,7 +342,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 21372388}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1972383235}
+        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+        m_MethodName: EnterScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Configurator
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &21372388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,7 +1011,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 994376835}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1972383235}
+        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+        m_MethodName: EnterScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Simulations
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &994376835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,7 +1146,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1249121106}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1972383235}
+        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+        m_MethodName: EnterScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PartShop
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1249121106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,3 +1474,21 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1972383232}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1972383234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4385739763257983716, guid: fd7c14590d845f4439014943c4b1c621,
+    type: 3}
+  m_PrefabInstance: {fileID: 1972383232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1972383235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972383234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 971d2704d03185f49a9e5c5f1068d78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
