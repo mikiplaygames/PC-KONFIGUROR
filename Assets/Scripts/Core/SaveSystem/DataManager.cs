@@ -2,7 +2,6 @@ using UnityEngine;
 using HeadDevMikiPlayGames.Core.Singletons;
 using System.Linq;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 public class DataManager : Singleton<DataManager>
 {
@@ -11,12 +10,16 @@ public class DataManager : Singleton<DataManager>
 
     [SerializeField] private List<IDataPersistence> dataPersistenceObjects;
 
+    private void Start()
+    {
+        this.dataHandler ??= new FileDataHandler(Application.persistentDataPath, "save.save");
+        this.dataPersistenceObjects = FindAllDataPersistanceObjects();
+        LoadGame();
+    }
+    /*
     private void OnEnable()
     {
-        if (this.dataHandler == null)
-        {
-            this.dataHandler = new FileDataHandler(Application.persistentDataPath, "save.save");
-        }
+        this.dataHandler ??= new FileDataHandler(Application.persistentDataPath, "save.save");
         SceneManager.sceneLoaded += GETLIST;
     }
 
@@ -29,13 +32,12 @@ public class DataManager : Singleton<DataManager>
     {
         this.dataPersistenceObjects = FindAllDataPersistanceObjects();
         LoadGame();
-    }
+    }*/
 
     public void NewGame()
     {
         this.gameData = new ConfigData();
         dataHandler.Save(gameData);
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
     public void LoadGame()

@@ -1,12 +1,9 @@
 [System.Serializable]
 public class ConfigData
 {
-    public string currentConfig;
-    public SerializableDictionary<int, PcData> mainLvlData;
-
+    public SerializableDictionary<string, PcData> pcData;
     public ConfigData()
     {
-        currentConfig = "";
-        mainLvlData = new SerializableDictionary<int, PcData>();
+        pcData = new SerializableDictionary<string, PcData>();
     }
 }
